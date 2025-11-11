@@ -1,0 +1,509 @@
+<!-- Events Section -->
+<div class="relative bg-white overflow-hidden">
+  <!-- Gradient background -->
+  <div class="absolute inset-0 bg-gradient-to-b from-blue-50/30 via-white to-slate-50">
+    <div class="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-gradient-to-tl from-indigo-400/10 to-transparent rounded-full"></div>
+  </div>
+  
+  <!-- Content -->
+  <section class="relative px-8 lg:px-16 py-20 lg:py-32 max-w-7xl mx-auto">
+    
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        Our Events
+      </h2>
+      <div class="h-1 w-20 bg-gradient-to-r from-[#003366] to-blue-400 rounded-full mx-auto mb-6"></div>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        From workshops and hackathons to tech talks and networking sessions, we host events that inspire, educate, and connect our community.
+      </p>
+    </div>
+    
+    <!-- Tabs -->
+    <div class="mb-12">
+      <div class="flex justify-center border-b border-gray-200">
+        <button 
+          onclick="switchTab('upcoming')" 
+          id="upcoming-tab"
+          class="tab-button px-8 py-4 text-lg font-semibold text-[#003366] border-b-2 border-[#003366] transition-all duration-300">
+          Upcoming Events
+        </button>
+        <button 
+          onclick="switchTab('past')" 
+          id="past-tab"
+          class="tab-button px-8 py-4 text-lg font-semibold text-gray-500 border-b-2 border-transparent hover:text-gray-700 transition-all duration-300">
+          Past Events
+        </button>
+      </div>
+    </div>
+    
+    <!-- Upcoming Events Tab -->
+    <div id="upcoming-content" class="tab-content">
+      
+      <!-- Upcoming Events Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        
+        <!-- Event Card 1 -->
+        <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-br from-[#003366] to-blue-500 flex items-center justify-center">
+            <div class="text-center text-white">
+              <p class="text-5xl font-bold">25</p>
+              <p class="text-xl">NOV</p>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-[#003366] text-sm font-semibold rounded-full">Workshop</span>
+              <span class="text-gray-500 text-sm">5:00 PM - 7:00 PM</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Web Development Bootcamp</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Join us for an intensive hands-on workshop covering HTML, CSS, and JavaScript fundamentals. Perfect for beginners looking to start their web development journey.
+            </p>
+            <div class="flex items-center gap-3 text-sm text-gray-500 mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Computer Lab 3, GCU</span>
+            </div>
+            <button 
+              onclick="openRegistrationModal('Web Development Bootcamp')"
+              class="w-full bg-gradient-to-r from-[#003366] to-blue-500 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300">
+              Register Now
+            </button>
+          </div>
+        </div>
+        
+        <!-- Event Card 2 -->
+        <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center">
+            <div class="text-center text-white">
+              <p class="text-5xl font-bold">02</p>
+              <p class="text-xl">DEC</p>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-semibold rounded-full">Hackathon</span>
+              <span class="text-gray-500 text-sm">24 Hours</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">CodeSprint 2024</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              A 24-hour coding marathon where teams compete to build innovative solutions. Prizes, mentorship, and networking opportunities await!
+            </p>
+            <div class="flex items-center gap-3 text-sm text-gray-500 mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Main Auditorium, GCU</span>
+            </div>
+            <button 
+              onclick="openRegistrationModal('CodeSprint 2024')"
+              class="w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300">
+              Register Your Team
+            </button>
+          </div>
+        </div>
+        
+        <!-- Event Card 3 -->
+        <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-br from-emerald-600 to-teal-500 flex items-center justify-center">
+            <div class="text-center text-white">
+              <p class="text-5xl font-bold">15</p>
+              <p class="text-xl">DEC</p>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-sm font-semibold rounded-full">Tech Talk</span>
+              <span class="text-gray-500 text-sm">6:00 PM - 8:00 PM</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">AI & Machine Learning: The Future</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Industry expert session on the latest trends in AI and ML. Learn about career opportunities and hands-on applications in the field.
+            </p>
+            <div class="flex items-center gap-3 text-sm text-gray-500 mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Seminar Hall, GCU</span>
+            </div>
+            <button 
+              onclick="openRegistrationModal('AI & Machine Learning: The Future')"
+              class="w-full bg-gradient-to-r from-emerald-600 to-teal-500 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300">
+              Register Now
+            </button>
+          </div>
+        </div>
+        
+        <!-- Event Card 4 -->
+        <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
+            <div class="text-center text-white">
+              <p class="text-5xl font-bold">20</p>
+              <p class="text-xl">DEC</p>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm font-semibold rounded-full">Networking</span>
+              <span class="text-gray-500 text-sm">4:00 PM - 6:00 PM</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Industry Meetup & Career Fair</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Connect with tech industry professionals, explore internship opportunities, and get career guidance from experienced mentors.
+            </p>
+            <div class="flex items-center gap-3 text-sm text-gray-500 mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>University Lawn, GCU</span>
+            </div>
+            <button 
+              onclick="openRegistrationModal('Industry Meetup & Career Fair')"
+              class="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300">
+              Register Now
+            </button>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    <!-- Past Events Tab -->
+    <div id="past-content" class="tab-content hidden">
+      
+      <!-- Event Highlights -->
+      <div class="mb-16">
+        <h3 class="text-3xl font-bold text-gray-900 mb-8">Event Highlights</h3>
+        
+        <div class="space-y-8">
+          <!-- Highlight 1 -->
+          <div class="bg-white rounded-2xl shadow-lg border border-slate-100 p-8">
+            <div class="flex flex-col lg:flex-row gap-8">
+              <div class="lg:w-1/3">
+                <img src="/assets/event-hackathon.jpg" alt="Hackathon 2023" class="w-full h-64 object-cover rounded-xl">
+              </div>
+              <div class="lg:w-2/3">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="px-3 py-1 bg-blue-100 text-[#003366] text-sm font-semibold rounded-full">Hackathon</span>
+                  <span class="text-gray-500">October 15, 2024</span>
+                </div>
+                <h4 class="text-2xl font-bold text-gray-900 mb-4">CodeFest 2024 - A Huge Success!</h4>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  Over 150 students participated in our biggest hackathon yet! Teams built amazing projects ranging from AI-powered apps to social impact solutions. Congratulations to all winners and participants!
+                </p>
+                <a href="/newsletters/codefest-2024.pdf" class="cursor-pointer inline-flex items-center gap-2 text-[#003366] font-semibold hover:underline">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download Newsletter
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Highlight 2 -->
+          <div class="bg-white rounded-2xl shadow-lg border border-slate-100 p-8">
+            <div class="flex flex-col lg:flex-row gap-8">
+              <div class="lg:w-1/3">
+                <img src="/assets/event-workshop.jpg" alt="Workshop" class="w-full h-64 object-cover rounded-xl">
+              </div>
+              <div class="lg:w-2/3">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-semibold rounded-full">Workshop</span>
+                  <span class="text-gray-500">September 20, 2024</span>
+                </div>
+                <h4 class="text-2xl font-bold text-gray-900 mb-4">Full Stack Development Workshop</h4>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  A comprehensive 3-day workshop where students learned React, Node.js, and MongoDB. Participants built complete web applications from scratch and gained valuable industry insights.
+                </p>
+                <a href="/newsletters/fullstack-workshop-2024.pdf" class="cursor-pointer inline-flex items-center gap-2 text-[#003366] font-semibold hover:underline">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download Newsletter
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Highlight 3 -->
+          <div class="bg-white rounded-2xl shadow-lg border border-slate-100 p-8">
+            <div class="flex flex-col lg:flex-row gap-8">
+              <div class="lg:w-1/3">
+                <img src="/assets/event-talk.jpg" alt="Tech Talk" class="w-full h-64 object-cover rounded-xl">
+              </div>
+              <div class="lg:w-2/3">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-semibold rounded-full">Tech Talk</span>
+                  <span class="text-gray-500">August 10, 2024</span>
+                </div>
+                <h4 class="text-2xl font-bold text-gray-900 mb-4">Cybersecurity in the Modern Age</h4>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                  An enlightening session with cybersecurity expert Dr. Ahmed Khan, covering the latest threats, best practices, and career opportunities in the field of information security.
+                </p>
+                <a href="/newsletters/cybersecurity-talk-2024.pdf" class="cursor-pointer inline-flex items-center gap-2 text-[#003366] font-semibold hover:underline">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download Newsletter
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Photo Gallery -->
+      <div>
+        <h3 class="text-3xl font-bold text-gray-900 mb-8">Photo Gallery</h3>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="aspect-square overflow-hidden rounded-xl hover:shadow-xl transition-shadow duration-300">
+            <img src="/assets/gallery-1.jpg" alt="Gallery 1" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl hover:shadow-xl transition-shadow duration-300">
+            <img src="/assets/gallery-2.jpg" alt="Gallery 2" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl hover:shadow-xl transition-shadow duration-300">
+            <img src="/assets/gallery-3.jpg" alt="Gallery 3" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl hover:shadow-xl transition-shadow duration-300">
+            <img src="/assets/gallery-4.jpg" alt="Gallery 4" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl hover:shadow-xl transition-shadow duration-300">
+            <img src="/assets/gallery-5.jpg" alt="Gallery 5" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl hover:shadow-xl transition-shadow duration-300">
+            <img src="/assets/gallery-6.jpg" alt="Gallery 6" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl hover:shadow-xl transition-shadow duration-300">
+            <img src="/assets/gallery-7.jpg" alt="Gallery 7" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+          </div>
+          <div class="aspect-square overflow-hidden rounded-xl hover:shadow-xl transition-shadow duration-300">
+            <img src="/assets/gallery-8.jpg" alt="Gallery 8" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+          </div>
+        </div>
+        
+        <div class="text-center mt-8">
+          <a href="/gallery" class="cursor-pointer inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#003366] to-blue-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300">
+            View Full Gallery
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
+</div>
+
+<!-- Registration Modal -->
+<div id="registration-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+  <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+    <div class="sticky top-0 bg-gradient-to-r from-[#003366] to-blue-500 text-white p-6 rounded-t-2xl flex justify-between items-center">
+      <h3 class="text-2xl font-bold" id="modal-event-title">Event Registration</h3>
+      <button onclick="closeRegistrationModal()" class="text-white hover:text-gray-200">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <form class="p-8" onsubmit="handleRegistration(event)">
+      <div class="space-y-6">
+        
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+          <input 
+            type="text" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+            placeholder="Enter your full name"
+          >
+        </div>
+        
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Roll Number *</label>
+          <input 
+            type="text" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+            placeholder="e.g., BSCS-2021-001"
+          >
+        </div>
+        
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+          <input 
+            type="email" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+            placeholder="your.email@gcu.edu.pk"
+          >
+        </div>
+        
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number *</label>
+          <input 
+            type="tel" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+            placeholder="+92 300 1234567"
+          >
+        </div>
+        
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Department *</label>
+          <select 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+          >
+            <option value="">Select your department</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Year of Study *</label>
+          <select 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+          >
+            <option value="">Select year</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+          </select>
+        </div>
+        
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Why do you want to attend this event?</label>
+          <textarea 
+            rows="4"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+            placeholder="Tell us about your interest..."
+          ></textarea>
+        </div>
+        
+        <div class="flex items-start gap-3">
+          <input 
+            type="checkbox" 
+            required
+            class="mt-1 w-4 h-4 text-[#003366] border-gray-300 rounded focus:ring-[#003366]"
+          >
+          <label class="text-sm text-gray-600">
+            I agree to receive event updates and notifications from CSS via email and WhatsApp.
+          </label>
+        </div>
+        
+      </div>
+      
+      <div class="mt-8 flex gap-4">
+        <button 
+          type="button"
+          onclick="closeRegistrationModal()"
+          class="flex-1 px-6 py-3 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors duration-300"
+        >
+          Cancel
+        </button>
+        <button 
+          type="submit"
+          class="flex-1 px-6 py-3 bg-gradient-to-r from-[#003366] to-blue-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
+        >
+          Complete Registration
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Tab switching functionality
+  function switchTab(tab) {
+    const upcomingTab = document.getElementById('upcoming-tab');
+    const pastTab = document.getElementById('past-tab');
+    const upcomingContent = document.getElementById('upcoming-content');
+    const pastContent = document.getElementById('past-content');
+    
+    if (tab === 'upcoming') {
+      upcomingTab.classList.add('text-[#003366]', 'border-[#003366]');
+      upcomingTab.classList.remove('text-gray-500', 'border-transparent');
+      pastTab.classList.remove('text-[#003366]', 'border-[#003366]');
+      pastTab.classList.add('text-gray-500', 'border-transparent');
+      upcomingContent.classList.remove('hidden');
+      pastContent.classList.add('hidden');
+    } else {
+      pastTab.classList.add('text-[#003366]', 'border-[#003366]');
+      pastTab.classList.remove('text-gray-500', 'border-transparent');
+      upcomingTab.classList.remove('text-[#003366]', 'border-[#003366]');
+      upcomingTab.classList.add('text-gray-500', 'border-transparent');
+      pastContent.classList.remove('hidden');
+      upcomingContent.classList.add('hidden');
+    }
+  }
+  
+  // Modal functions
+  function openRegistrationModal(eventName) {
+    document.getElementById('modal-event-title').textContent = eventName + ' - Registration';
+    document.getElementById('registration-modal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeRegistrationModal() {
+    document.getElementById('registration-modal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+  
+  // Handle registration form submission
+  function handleRegistration(event) {
+    event.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(event.target);
+    
+    // Here you would typically send the data to your backend
+    // For now, we'll just show a success message
+    
+    alert('Registration successful! You will receive a confirmation email shortly.');
+    closeRegistrationModal();
+    event.target.reset();
+  }
+  
+  // Close modal when clicking outside
+  document.getElementById('registration-modal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeRegistrationModal();
+    }
+  });
+</script>
+
+<style>
+  .tab-content {
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
